@@ -26,7 +26,11 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Exibir nome do repositório
-      run: echo $GITHUB_REPOSITORY
+      env:
+        SAUDACAO: Bem-vindos ao Treinamento!
+      run: |
+        echo $GITHUB_REPOSITORY
+        echo ${{ env.SAUDACAO }}
 
     - name: Build e Push no Docker Hub
       run: |
