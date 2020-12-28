@@ -25,7 +25,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Exibir nome do workflow
+    - name: Exibir nome do repositório
       run: echo $GITHUB_REPOSITORY
 
     - name: Build e Push no Docker Hub
