@@ -21,7 +21,7 @@ namespace SiteContagem.Pages
                 TempData["Local"] = _CONTADOR.Local;
                 TempData["Kernel"] = _CONTADOR.Kernel;
                 TempData["TargetFramework"] = _CONTADOR.TargetFramework;
-                TempData["MensagemFixa"] = "Teste 2";
+                TempData["MensagemFixa"] = "Teste No. Execucao Workflow";
                 TempData["MensagemVariavel"] = configuration["MensagemVariavel"];
             }            
         }
