@@ -45,6 +45,7 @@ jobs:
         echo ${{ env.SAUDACAO }}
 
     - name: Build e Push no Docker Hub
+      shell: bash
       run: |
         cd ./SiteContagem
         docker build . --file Dockerfile --tag ${{ env.NOME_COMPLETO_IMAGEM }}:latest
