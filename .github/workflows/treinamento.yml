@@ -19,6 +19,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Teste com Bash
+      run: |
+        lsb_release -a
+        ls
+        history
+        
+    - name: Teste com PowerShell Core
+      shell: pwsh
+      run: |
+        Write-Host "Primeira Mensagem"
+        Write-Host "Segunda Mensagem com PowerShell Core"
+
     - name: Login no Docker Hub
       uses: docker/login-action@v1.8.0
       with:
